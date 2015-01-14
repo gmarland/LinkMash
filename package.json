@@ -33,7 +33,7 @@
     "readLinkModel": "../models/ReadLink.js",
     "dismissedLinkModel": "../models/DismissedLink.js",
     "customModulesFolder": "./custom_modules/",
-    "facebookKey": ""facebookKey",
+    "facebookKey": "facebookKey",
     "facebookSecret": "facebookSecret",
     "twitterKey": "twitterKey",
     "twitterSecret": "twitterSecret"
