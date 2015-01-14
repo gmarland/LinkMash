@@ -1,0 +1,52 @@
+<div id="main-list-body">
+	<div id="loading-container" ng-show="linksLoading">
+		<div>Loading<span id="loading-ellipses">.</span></div>
+	</div>
+	<div class="main-list-header">
+		<img src="/img/logo.png" border="0" class="left" />
+		<img src="/img/settings.png" border="0" ng-click="ToggleSettings()" class="selectable right" />
+		<img src="/img/profile.png" border="0" ng-click="ToggleProfile()" class="selectable right" />
+		<img src="/img/refresh.png" border="0" ng-click="RefreshLinks()" class="selectable right" />
+		<div class="clear"></div>
+	</div>
+	<div class="settings-container" ng-show="showSettings">
+		<div class="settings-layout-container">
+			<div class="button-container">
+				<div class="button-item" ng-click="SelectScanFacebook()">
+					<table cellspacing="0" cellpadding="0" >
+						<tr>
+							<td><img ng-src="{{ (user.facebookAuthenticated && user.facebookEnabled) && '/img/facebookSelected.png' || '/img/facebookUnavailable.png' }}" border="0" /></td>
+							<td style="padding-left:10px;">Facebook</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="button-container">
+				<div class="button-item" ng-click="SelectScanTwitter()">
+					<table cellspacing="0" cellpadding="0" >
+						<tr>
+							<td><img ng-src="{{ (user.twitterAuthenticated && user.twitterEnabled) && '/img/twitterSelected.png' || '/img/twitterUnavailable.png' }}" border="0" /></td>
+							<td style="padding-left:10px;">Twitter</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="settings-container" ng-show="showProfile">
+		<div class="settings-layout-container">
+			<div class="button-container">
+				<div class="button-item" ng-click="LogoutUser()">Log Out</div>
+			</div>
+		</div>
+	</div>
+	<div id="link-layout-container">
+		<div class="link" ng-repeat="link in links" ng-click="OpenLink(link)">
+			<div class="dismiss" ng-click="$event.stopPropagation();DimissLink(link);">&#10006;</div>
+			<div><img ng-src="{{ (link.source.trim().toLowerCase() == 'facebook') && '/img/facebookLink.png' || '/img/twitterLink.png' }}" border="0" /> <span class="name">{{ GetName(link) }}</span> <span class="username">{{ GetUsername(link) }}</span></div>
+			<div class="description" ng-bind-html="GetURLDescription(link)"></div>
+			<div class="url">{{ GetURLTitle(link) }}</div>
+		</div>
+	</div>
+	<div id="more-button-container" class="center" ng-show="showMore"><img src="/img/more.png" border="0" ng-click="LoadMoreLinks()" /></div>
+</div>

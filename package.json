@@ -1,0 +1,41 @@
+{
+  "name": "LinkMash",
+  "subdomain": "LinkMash",
+  "domains": [
+    "linkmash.com",
+    "www.linkmash.com"
+  ],
+  "scripts": {
+    "start": "app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.3.0",
+    "cookie-parser": "1.1.0",
+    "ejs": "1.0.0",
+    "express": "4.4.1",
+    "express-session": "1.2.1",
+    "mongoose": "3.8.12",
+    "oauth": "0.9.12",
+    "passport": "0.2.0",
+    "passport-facebook": "1.0.3",
+    "passport-local": "1.0.0",
+    "passport-twitter": "1.0.2",
+    "path": "0.4.9",
+    "request": "2.36.0"
+  },
+  "config": {
+    "mongoAddress": "mongodb://localhost/LinkMash",
+    "sessionID": "LinkMash",
+    "cookieID": "LinkMash_sessionId",
+    "controllerPath": "./node_data_access/controllers/",
+    "userModel": "../models/User.js",
+    "linkModel": "../models/Link.js",
+    "readLinkModel": "../models/ReadLink.js",
+    "dismissedLinkModel": "../models/DismissedLink.js",
+    "customModulesFolder": "./custom_modules/",
+    "facebookKey": ""facebookKey",
+    "facebookSecret": "facebookSecret",
+    "twitterKey": "twitterKey",
+    "twitterSecret": "twitterSecret"
+  }
+}

@@ -1,0 +1,58 @@
+/* custom fonts */
+	
+	@font-face {
+		font-family: 'helveticaneueltstdlt';
+		src: url('/fonts/helveticaneueltstdlt.eot');
+		src: local('helveticaneueltstdlt'), url('/fonts/helveticaneueltstdlt.woff') format('woff'), url('/fonts/helveticaneueltstdlt.ttf') format('truetype');
+	}
+	
+	@font-face {
+		font-family: 'helveticaneueltstdlt';
+		src: url('/fonts/helveticaneueltstdlt.eot');
+		src: local('helveticaneueltstdlt'), url('/fonts/helveticaneueltstdlt.woff') format('woff'), url('/fonts/helveticaneueltstdlt.ttf') format('truetype');
+	}
+
+/* global styles */
+
+	html {
+	    margin: 0px;
+	    padding: 0px;
+	    height: 100%;
+	}
+
+	body {
+	    background: #E6E6E6;
+	    margin: 0px;
+	    padding: : 0px;
+	    height: 100%;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 15px;
+	    font-weight: normal;
+	    color: #222222;
+	}
+
+/* utility classes */
+
+	.selectable {
+	    cursor: hand;
+	    cursor: pointer;
+	}
+
+	.left {
+	    position: relative;
+	    float: left;
+	}
+	
+	.right {
+	    position: relative;
+	    float: right;
+	}
+	
+	.center {
+		position: relative;
+	    margin: 0 auto;
+	}
+
+	.clear {
+	    clear: both;
+	}

@@ -1,0 +1,212 @@
+	body {
+	    background: #ffffff;
+	}
+
+/* Splash Styles */
+
+	#splash-header {
+		background-color: #3C5A98;
+		margin: 0px;
+		padding: 0px;
+		margin-bottom: 25px;
+	}
+
+	#splash-logo {
+		width: 100%;
+		max-width: 209px;
+   		vertical-align: top;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.splash-main-container {
+		max-width: 800px;
+	    margin: 0 auto;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    margin-bottom: 15px;
+	}
+
+	.splash-panel {
+	    position: relative;
+	    float: left;
+	    max-width: 510px;
+	    margin: 0 auto;
+	    background-color: #3C5A98;
+	    padding: 15px 15px 5px 15px;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.splash-panel .header {
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	.splash-panel-nav {
+	    position: relative;
+	    float: right;
+	}
+
+	.splash-button-container {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.splash-button {
+		cursor: pointer;
+		-webkit-appearance: button;
+		width: 250px;
+		height: 47px;
+		background-color: #73AC59;
+		border: 0px;
+		color: #FFF;
+		box-shadow: none;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		border: 1px solid #579539;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 2px;
+	}
+
+	#splash-screenshot {
+		max-width: 100%;
+	}
+
+	.panel-body {
+		background-color: #F5F5F5;
+	}
+
+/* login styles */
+
+	#login-helpers {
+		margin-top: 8px;
+	}
+
+/* login panel styles */
+
+	.panel-error-message {
+	    position: relative;
+	    margin-bottom: 5px;
+	    font-weight: bold;
+	    color: #CC0000;
+	}
+	
+	.panel-body {
+	    position: relative;
+	    max-width: 450px;
+	    margin: 0 auto;
+	    background-color: #F5F5F5;
+	    padding-top: 15px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-bottom: 7px;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+        -webkit-box-shadow: 0 1px 4px #aaa;
+        -moz-box-shadow: 0 1px 4px #aaa;
+        box-shadow: 0 1px 4px #aaa;
+	    font-size: 16px;
+	}
+	
+	.panel-body .panel-header {
+	    position: relative;
+	    font-size: 22px;
+	    padding-bottom: 3px;
+	}
+	
+	.panel-body .panel-intro {
+	    position: relative;
+	    margin-top: 5px;
+	    margin-bottom: 15px;
+	}
+	
+	.panel-spacer {
+	    margin-top: 15px;   
+	}
+	
+	.panel-item-header {
+	    font-weight: bold;
+	}
+	
+	.panel-body .panel-item {
+	    padding-bottom: 5px
+	}
+	
+	.panel-body .panel-padding {
+	    padding-bottom: 15px;
+	}
+	
+	.panel-body .input-container {
+	    padding-right: 13px;
+	}
+	
+	.panel-item input[type=text] {
+	    width: 100%;
+	    padding: 5px;
+	    border: 1px solid #b9b9b9;
+	    resize: none;
+	    font-size: 17px;
+	}
+	
+	.panel-item input[type=password] {
+	    width: 100%;
+	    padding: 5px;
+	    border: 1px solid #b9b9b9;
+	    resize: none;
+	    font-size: 17px;
+	}
+	
+	.panel-body a {
+	    color: #1884B1;
+	    text-decoration: none;
+	    cursor: hand;
+	    cursor: pointer;
+	}
+	
+	.panel-body a:hover {
+	    text-decoration: underline;
+	    cursor: hand;
+	    cursor: pointer;
+	}
+	
+	.panel-body .authenticate-button {
+		width: 100%;
+	    background-color: #29ABE2;
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+		background-color: #73AC59;
+		border: 1px solid #579539;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    font-size: 18px;
+	    color: #FFFFFF;
+	    cursor: hand;
+	    cursor: pointer;
+
+	}
+
+
+	@media only screen and (max-width: 800px) {
+		.splash-main-container {
+			max-width: 450px;
+		}
+
+		.splash-panel-nav {
+			width: 100%;
+		}
+
+		.nav-button {
+			width: 100%;
+		}
+	}

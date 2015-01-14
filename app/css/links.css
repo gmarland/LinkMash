@@ -1,0 +1,128 @@
+/* main list header */
+	
+	.main-list-header {
+	    position: relative;
+	    height: 38px;
+	    background-color: #3C5A98;
+        -webkit-box-shadow: 0 1px 4px #ccc;
+        -moz-box-shadow: 0 1px 4px #ccc;
+        box-shadow: 0 1px 4px #ccc;
+	}
+
+/* link settings */	
+
+	.settings-container {
+		background-color: #000000;
+	}
+
+	.settings-container .settings-layout-container {
+		position: relative;
+		max-width: 800px;
+	    margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.settings-container .settings-layout-container .button-container .button-item {
+		margin: 10px;
+		padding: 10px;
+		padding-bottom: 5px;
+		background-color: #FFFFFF;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+		font-size: 24px;
+		font-weight: 700;
+		cursor: hand;
+		cursor: pointer;
+		text-align: center;
+	}
+
+/* loading container */
+
+	#loading-container {
+		position: fixed;
+		width: 200px;
+		top: 50px;
+		left: 50%;
+		margin-left: -100px;
+		padding: 5px 0 5px 0;
+		text-align: left;
+		background-color: #333333;
+		border-radius: 8px;
+        -webkit-box-shadow: 0 1px 4px #ccc;
+        -moz-box-shadow: 0 1px 4px #ccc;
+        box-shadow: 0 1px 4px #ccc;
+		color: #FFFFFF;
+		font-size: 24px;
+		font-weight: bold;
+		z-index: 999;
+	}
+
+	#loading-container > div {
+		position: relative;
+		left: 45px;
+	}
+
+/* link layout */
+
+	#link-layout-container {
+		position: relative;
+		max-width: 800px;
+	    margin: 0 auto;
+	    padding-top: 10px;
+	}
+
+	.link {
+		position: relative;
+		background: #FFFFFF;
+		margin: 0 10px 10px 10px;
+		padding: 10px;
+        -webkit-box-shadow: 0 1px 4px #ccc;
+        -moz-box-shadow: 0 1px 4px #ccc;
+        box-shadow: 0 1px 4px #ccc;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+		cursor: hand;
+		cursor: pointer;
+	}
+
+	.link .dismiss {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 16px;
+		color: #444444;
+		font-weight: bold;
+	}
+
+	.link .name {
+		font-size: 13px;
+		color: #222222;
+		font-weight: bold;
+	}
+
+	.link .username {
+		font-size: 12px;
+		color: #666666;
+	}
+
+	.link .description {
+		margin-top: 3px;
+		margin-bottom: 8px;
+  		word-wrap: break-word;
+	}
+
+	.link .url {
+		font-size: 13px;
+		color: #2F84C2;
+  		word-wrap: break-word;
+	}
+
+	#more-button-container {
+		width: 38px;
+		margin-bottom: 10px;
+	    cursor: hand;
+	    cursor: pointer;
+	}

@@ -1,0 +1,16 @@
+<div id="splash-body-content" ng-show="showPage">
+	<div id="main-body">
+		<div id="splash-header"><img id="splash-logo" src="/img/LogoMain.png" border="0" class="selectable" ng-click="landing()" /></div>
+		<div class="panel-body">
+			<div class="panel-header">Thank you for your interest!</div>
+			<div class="panel-intro">If you already have an account? <a ng-click="logIn()">Sign in</a></div>
+			<div class="panel-error-message">{{ createAlert }}</div>
+			<div class="panel-item input-container panel-padding"><input type="text" placeholder="E-mail address" ng-model="createUser.email" /></div>
+			<div class="panel-item input-container panel-padding"><input type="password" placeholder="Password" ng-model="createUser.password" /></div>
+			<div class="panel-item input-container panel-padding"><input type="password" placeholder="Confirm Password" ng-model="createUser.passwordConfirm" /></div>
+			<div class="panel-item">
+				<button class="authenticate-button"  ng-click="createNewUser()">Create an Account</button>
+			</div>
+		</div>
+	</div>
+</div>
